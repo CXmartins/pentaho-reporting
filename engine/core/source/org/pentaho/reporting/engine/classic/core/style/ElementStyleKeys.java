@@ -172,6 +172,8 @@ public class ElementStyleKeys
    */
   public static final StyleKey EXCEL_WRAP_TEXT = StyleKey.getStyleKey("Excel.WrapText", Boolean.class);
 
+  public static final StyleKey EXCEL_INDENTION = StyleKey.getStyleKey("Excel.Indention", Short.class,
+      false, false);
   /**
    * The StyleKey for the user defined cell data format.
    */

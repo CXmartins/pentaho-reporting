@@ -150,7 +150,11 @@ public class TextStyleReadHandler extends AbstractXmlReadHandler implements Styl
     {
       styleSheet.setBooleanStyleProperty(ElementStyleKeys.EXCEL_WRAP_TEXT, "true".equals(excelTextWrap));
     }
-
+	final String excelIndention = attrs.getValue( getUri(), "excel-text-indention" );
+    if ( excelIndention != null ) 
+	{
+      styleSheet.setStyleProperty(ElementStyleKeys.EXCEL_INDENTION, ReportParserUtil.parseInteger(excelIndention, getLocator()).shortValue());
+    }
     final String wsCollapse = attrs.getValue(getUri(), "whitespace-collapse");
     if (wsCollapse != null)
     {

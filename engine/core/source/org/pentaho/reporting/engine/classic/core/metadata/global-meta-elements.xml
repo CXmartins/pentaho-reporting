@@ -1335,6 +1335,7 @@
            propertyEditor="org.pentaho.reporting.engine.classic.core.metadata.propertyeditors.AbsoluteLengthPropertyEditor"/>
 
     <style name="Excel.WrapText" expert="true" hidden="false" mandatory="false"/>
+    <style name="Excel.Indention" expert="true" hidden="false" mandatory="false"/>
     <style name="Excel.CellDataFormat" expert="true" hidden="false" mandatory="false"/>
 
     <style name="text-indent" expert="true" hidden="true" mandatory="false"/>

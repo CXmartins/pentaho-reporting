@@ -564,6 +564,11 @@ public class StyleWriterUtility
       final boolean value = style.getBooleanStyleProperty(ElementStyleKeys.EXCEL_WRAP_TEXT);
       bandStyleAtts.setAttribute(BundleNamespaces.STYLE, "excel-text-wrapping", String.valueOf(value));
     }
+	if ( style.isLocalKey( ElementStyleKeys.EXCEL_INDENTION ) ) 
+	{
+      final int value = style.getIntStyleProperty(ElementStyleKeys.EXCEL_INDENTION, 0 );
+      bandStyleAtts.setAttribute( BundleNamespaces.STYLE, "excel-text-indention", String.valueOf( value ) );
+    }
     if (style.isLocalKey(TextStyleKeys.TRIM_TEXT_CONTENT))
     {
       final boolean value = style.getBooleanStyleProperty(TextStyleKeys.TRIM_TEXT_CONTENT);
